@@ -1,0 +1,52 @@
+{%load static%}
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title> Select your seats</title>
+    <link rel="stylesheet" href="{% static 'css/SelectSeats.css'%}">
+    
+    <script src="{%static 'js/SelectSeats.js'%}"></script>
+    <script src="{%static 'js/details.js'%}"></script>
+  
+
+</head>
+
+<body>
+  <nav>
+    <ul>
+        <li id="title"><a href="default.asp"></a>Railways<img id="logo" src="{% static 'images/train (2).png'%}"></li>
+        <li><a href="http://127.0.0.1:8000">Log Out</a></li>
+ 
+      </ul>
+    </nav>
+    <nav id="bottom">
+      <ul>
+          <li style="margin-left:9% ;"><a href="http://127.0.0.1:8000//Home">Home</a></li>
+          <li><a href="http://127.0.0.1:8000//classes">Trains</a></li>
+          <li><a href="http://127.0.0.1:8000//Trips">Trips</a></li>
+          <li><a href="http://127.0.0.1:8000//stations">Stations</a></li>
+          <li><a href="http://127.0.0.1:8000//booked">Bookings</a></li>
+          <li><a href="http://127.0.0.1:8000//aboutUs">About Us</a></li>
+          <li><a href="http://127.0.0.1:8000//contactUs">Contact Us</a></li>
+          <li><a href="http://127.0.0.1:8000//Profile">Profile</a></li>
+        </ul>
+  </nav>
+  <form method="POST">
+      {%csrf_token %}
+    <div class="bookingInfo">
+        <label style="margin-bottom: 10px;font-weight: bold;"> Number Of Seats :</label><br>
+                <input name="NoOfSeats" style="margin-bottom: 10px;" class="inputNumber" type="number" placeholder="Enter Number of Seats" for="number of seats" required><br>
+                <label style="margin-bottom: 10px; font-weight: bold;"> Payment Way :</label><br>
+                <input style="margin-bottom: 10px;" type="radio" id="paymentWay" name="PaymentWay" value="Visa" required>
+                <label style="margin-bottom: 10px;" for="Visa">Visa</label><br>
+                <input style="margin-bottom: 10px;" type="radio" id="paymentWay" name="PaymentWay" value="Cash" required>
+                <label style="margin-bottom: 10px;" for="cash">Cash</label><br>
+                <button  class="submit" onclick="loadDoc()"> Submit </button>
+        </div>
+        
+    </form>
+    <div id="bookingCart"></div>
+</body>
+
+</html>

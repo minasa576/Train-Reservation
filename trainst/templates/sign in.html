@@ -1,0 +1,40 @@
+{%load static%}
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+        <link rel="stylesheet" type="text/css" href="{%static 'css/sign in.css'%}">
+        
+    <title>log in</title>
+  </head>
+  <body style="background-image: url('../static/images/r0_0_2793_1568_w1200_h678_fmax.jpg')">
+
+    <nav>
+      <ul>
+          <li id="title"><a href="default.asp"></a>Railways<img id="logo" src="{% static 'images/train (2).png'%}"></li>
+          <li><a href="http://127.0.0.1:8000//signUp">Sign Up</a></li>
+          <li><a href="http://127.0.0.1:8000//signIn">Login</a></li>
+        </ul>
+  </nav>
+  
+    <div class="logInAv">
+    <img class="av" src="{%static 'images/av.png'%}" alt="avatar">
+      
+      <h1>Login here</h1>
+      
+      <form method="POST">
+        {%csrf_token%}
+        <p>Username</p>
+        <input type="text" name="username" placeholder="Enter Username">
+        <p>Password</p>
+        <input type="password" name="password" placeholder="Enter password"><br>
+        <button> Login </button><br>
+  
+        <a href="#">Forgot password</a><br>
+        <a href="http://127.0.0.1:8000//signUp">Sign up</a>
+      </form>
+      
+    </div>
+
+  </body>
+</html>

@@ -1,0 +1,84 @@
+{% load static%}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="{% static 'css/trip.css'%}">
+</head>
+<body>
+  <nav>
+    <ul>
+        <li id="title"><a href="default.asp"></a>Railways<img id="logo" src="{% static 'images/train (2).png'%}"></li>
+        <li><a href="http://127.0.0.1:8000">Log Out</a></li>
+        
+        
+      </ul>
+    </nav>
+    <nav id="bottom">
+      <ul>
+          <li style="margin-left:9% ;"><a href="http://127.0.0.1:8000//Home">Home</a></li>
+          <li><a href="http://127.0.0.1:8000//classes">Trains</a></li>
+          <li><a href="http://127.0.0.1:8000//Trips">Trips</a></li>
+          <li><a href="http://127.0.0.1:8000//stations">Stations</a></li>
+          <li><a href="http://127.0.0.1:8000//booked">Bookings</a></li>
+          <li><a href="http://127.0.0.1:8000//aboutUs">About Us</a></li>
+          <li><a href="http://127.0.0.1:8000//contactUs">Contact Us</a></li>
+          <li><a href="http://127.0.0.1:8000//Profile">Profile</a></li>
+        </ul>
+  </nav>
+
+  
+     <div id="search">
+        <form method="GET" action="{% url 'Trips' %}">
+            <input type="search" name="From" placeholder="from"> 
+        
+            <input type="search" type="text" name="to" placeholder="to">
+
+            <input name="from_date" type="date" class="date" value="Departure Time">
+            <input name="to_date" type="date" class="date"> 
+            <input name="seats" type="text" class="numberOfSeats" placeholder="Number of seats">
+            
+            <input name="Price" type="search" placeholder="250.00">  
+            <button type="submit">search</button>
+        </form>
+     </div>
+ 
+
+
+  {% for x in trips%}
+  <div id="main">
+      <div class="trip">
+          <span class="no">
+              <span class="info">Trip No.</span>
+              <span class="info">Departure Time</span>
+              <span class="info">Arrival Time</span>
+              <span class="info">Price</span>
+              <span class="info"style="margin-right:0%;">Class</span>
+              <br>
+              <br>
+              <span class="info_in">{{x.trip_no}}</span>
+              <span class="info_in"> {{x.Departure_Time}}<img src="{% static 'images/crescent-moon.png' %}" class="time"></span>
+              <span class="info_in" style="margin-left:6%;">{{x.Arrival_Time}}<img src="{% static 'images/sun.png' %}" class="time"></span>
+              <span class="info_in" style="margin-left:5%;">EGP<sub>{{x.Price}}</sub></span>
+              <span class="classType">&nbsp; {{x.Classtrain}} &nbsp;</span>
+              <br>
+              <br>
+              <br>
+              <a href="{%url 'seats' x.id %} "><button class="seats">Select Seat</button></a>
+                <span class="specs"><img src="{%static 'images/wifi.png'%}" class="logo"><img src="{%static 'images/tablet.png'%}"class="logo"><img src="{% static 'images/tracking.png'%}"class="logo"></span>
+          </span>
+          
+      </div>
+  </div>
+  {% endfor %}
+
+    <!--div id="news">
+        <p>Sort By:</p>
+        <label class="switch">
+            <input type="checkbox">
+            <span class="slider round"></span>
+          </label>
+    <div id="in"><button onclick="Appear()"><img src="{% static 'images/next.png'%}" width="20px;"></button></div-->
+    
+</body>
+</html>

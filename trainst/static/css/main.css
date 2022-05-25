@@ -1,0 +1,126 @@
+body{
+	margin:0;
+	padding: 0;
+}
+
+nav
+{
+	padding: 0;
+    margin-bottom: 3%;
+
+}
+
+li{
+	display: inline-block;
+}
+
+#logo{
+	color: #A9A9A9;
+	font-size: 25px;
+
+}
+#icon
+{
+    margin-top: 3px;
+    width: 45px;
+}
+.teams{
+	text-decoration: none;
+	color:white;
+}
+#top
+{
+    
+    font-size:18px ;
+}
+#header
+{
+    width: 100vw;
+    margin-top: 0;
+    background-color: rgb(71, 134, 230);
+
+    list-style: none;
+    color: white;
+    font-weight: bold;
+}
+#bottom
+{
+    margin-left: 12%;
+    margin-bottom: 2%;
+}
+.tabs
+{
+    width:9%;
+    margin-left: 11%;
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+    border: 2px;
+    padding:0.5% ;
+    border-radius: 40%;
+    margin-bottom: 0.5%;
+}
+.tabs:hover
+{
+    background-color:rgba(240, 240, 240,0.3);
+}
+#name
+{
+    font-size: 40px;
+}
+#right
+{
+    margin-left: 65%;
+    margin-right: 2%;
+}
+#s_icon
+{
+    width: 20px;
+}
+#in
+{
+    margin-left: 15%;
+}
+#news
+{
+    width: 15%;
+    height:100vh;
+    float: left;
+    background-color: rgb(125, 165, 224);
+    display: block;
+}
+
+
+.info_images
+{
+    margin-left:5%;
+    margin-right: 5%;
+    margin-top: 10%;
+    width:90% ;
+}
+.info_text
+{
+    margin-left: 5%;
+    margin-bottom: 5%;
+}
+#slide{
+	
+	width:70%;
+	height: 500px;
+	z-index: -1;
+	position: absolute;
+
+}
+
+#show{
+
+	display: inline-block;
+	margin-left: 5%;
+	width:70%;
+	height: 500px;
+    margin-top: 2%;
+
+
+}
+

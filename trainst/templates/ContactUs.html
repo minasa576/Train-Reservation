@@ -1,0 +1,73 @@
+{%load static%}
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title> Contact Us</title>
+    <link rel="stylesheet" href="{% static 'css/ContactUs.css'%}">
+</head>
+
+<body>
+ 
+   
+  <nav>
+    <ul>
+      <li style=" 
+      
+          display: inline-block;
+          font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+          font-size: 35px;
+          margin-right: 60%;
+          margin-left: 10%;
+          color: #af1414;
+          text-shadow: 0px 2px 3px #555;
+      " id="title"><a href="default.asp"></a>Railways<img id="logo" src="{% static 'images/train (2).png'%}"></li>
+    </ul>
+  </nav>
+  <nav id="bottom">
+    <ul>
+        <li style="margin-left:9% ;"><a href="http://127.0.0.1:8000//Home">Home</a></li>
+        <li><a href="http://127.0.0.1:8000//classes">Trains</a></li>
+        <li><a href="http://127.0.0.1:8000//Trips">Trips</a></li>
+        <li><a href="http://127.0.0.1:8000//stations">Stations</a></li>
+        <li><a href="http://127.0.0.1:8000//booked">Bookings</a></li>
+        <li><a href="http://127.0.0.1:8000//aboutUs">About Us</a></li>
+        <li><a href="http://127.0.0.1:8000//contactUs">Contact Us</a></li>
+        <li><a href="http://127.0.0.1:8000//Profile">Profile</a></li>
+      </ul>
+</nav>
+<form class="ContactForm">
+    <div>
+        <h2>CONTACT US</h2>
+        
+        <label for="username"> <b> Name </b> </label><br>
+        <input type="text" placeholder="Martina Joseph Ayob Zaki" name="username" required><br>
+        <label for="Email"><b> Email </b></label>
+        <input type="email" placeholder="martina..@gmail.com" name="Email" required>
+        <br>
+        <label for="phoneNumber"> <b> Phone Number </b> </label><br>
+        <input type="tel" placeholder="01xxxxxxxxx" name="phoneNumber" required>
+        <br>
+        <label for="city"> <b> City </b> </label><br>
+        <input type="text" name="city" required>
+
+        <br>
+        <label for="submessage"> <b> The Subject of the Message </b> </label><br>
+        <input type="text" placeholder="Complain,Inquiry,..,etc" name="submessage" required>
+        <br>
+        <label for="messageContent"> <b> The Content of the Message </b> </label><br>
+        <textarea type="text" name="messageContent" required id="message" rows="10" cols="40"></textarea>
+        <br>
+        <button>Send Message</button><br>
+        <p style="margin-top: 40px;">If you have a question about our services and information about booking and purchasing tickets<a
+            href="http://127.0.0.1:8000//frequentlyAsked"><img src="{% static 'images/FAQ.png' %}" width="35px" height="35px" ></a></p>
+    </div>
+    <div class="ourInfo">
+        <span class="OurPhone"></span>012 2711 142
+        <span class="OurEmail"></span> contact@gmail.com
+    </div>
+</form>
+
+</body>
+
+</html>

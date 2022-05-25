@@ -1,0 +1,44 @@
+{%load static%}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="{% static 'css/index2.css' %}">
+</head>
+<body>
+   
+    <nav >
+        <ul>
+            <li id="title"><a href="default.asp"></a>Railways<img id="logo" src="{% static 'images/train (2).png' %}"></li>
+            <li><a href="http://127.0.0.1:8000//signUp">Sign Up</a></li>
+            <li><a href="http://127.0.0.1:8000//signIn">Login</a></li>
+          </ul>
+    </nav>
+
+    <div id="backgroundImage"></div>
+    <div id="cover"></div>
+    <div id="content">
+        <p id="main">Welcome to Railways</p>
+        <p id="sub">We save your time both while purchasing and while travelling</p>
+    </div>
+    <div id="login_form">
+        <p style="margin-left: 5%;font-weight: bold;">Travelling Route</p>
+        <select style="margin-right: 25%;">
+            <option value="" disabled selected hidden>From</option>
+            <option>Cairo</option>
+            <option>Giza</option>
+            <option>October</option>
+        </select>
+        <select>
+            <option value="" disabled selected hidden>To</option>
+            <option>Cairo</option>
+            <option>Giza</option>
+            <option>October</option>
+        </select>
+        <p style="margin-left: 5%; font-weight: bold; margin-top: 10%;">Travelling Date</p>
+        <input type="date" class="date" style="margin-right: 23%;">
+        <input type="date" class="date">
+        <button>Search Tickets</button>
+    </div>
+</body>
+</html>

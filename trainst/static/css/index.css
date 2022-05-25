@@ -1,0 +1,154 @@
+body
+{
+    padding: 0;
+    margin: 0;
+   
+}
+
+#backgroundImage
+{
+    background-image: url('../images/r0_0_2793_1568_w1200_h678_fmax.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    z-index: -1;
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    left: 0;
+    right: 0;
+    filter:blur(2px);
+}
+#content 
+{
+    position: fixed;
+    left: 0;
+    right: 0;
+    z-index: 2;
+    margin-left:15%;
+    margin-top: 12%;
+    
+}
+#login_form
+{
+    position: fixed;
+    left: 0;
+    right: 0;
+    z-index: 2;
+    background-color: rgba(90,90,90,0.5);
+    margin-left: 63%;
+    margin-top: 13%;
+    margin-right: 5%;
+    width:23%;
+}
+#cover
+{
+    background-color: rgba(	101, 101, 101,0.5) ;
+    z-index: 1;
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    left: 0;
+    right: 0;
+}
+nav
+{
+    margin: 0;
+    padding: 0;
+   background-color:rgb(55,55,55);
+}
+#bottom
+{
+  background-color: rgb(68, 68, 68);
+  padding: 1%;
+}
+nav ul
+ {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+ nav ul li 
+  {
+    display: inline-block;
+    margin-right: 3%;
+    
+  }
+  #bottom ul li 
+  {
+    margin-right: 5%;
+  }
+  nav ul li a 
+  {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+  }
+  #logo
+  {
+      width:30px;
+  }
+  #title
+  {
+      display: inline-block;
+      font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+      font-size: 35px;
+      margin-right: 60%;
+      margin-left: 10%;
+      color: #af1414;
+      text-shadow: 0px 2px 3px #555;
+  }
+  #main
+  {
+      font-size: 50px;
+      font-weight: bolder;
+      color: white;
+  }
+  #sub
+  {
+      margin-left: 8%;
+      width: 20%;
+      font-size:20px ;
+      color: white;
+  }
+ 
+input[type="search"]::-webkit-search-decoration,
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-results-button,
+input[type="search"]::-webkit-search-results-decoration {
+  display: none;
+}
+  input[type="date"]::-webkit-calendar-picker-indicator
+  {
+      display: none;
+  }
+  input[type="date"]::-moz-calendar-picker-indicator
+  {
+      display: none;
+  }
+  .date
+  {
+    
+    width: 30%;
+    margin-left: 5%;
+    background-image: url('../images/pin.png');
+    background-position: 95%;
+    background-size: 13%;
+    background-repeat: no-repeat;
+  }
+  button
+  {
+      background-color: rgb(249, 27, 27);
+      color: white;
+      margin-left: 37%;
+      margin-right: 30%;
+      margin-top: 10%;
+      padding: 3%;
+      margin-bottom: 3%;
+      border-radius: 20%;
+      border-color:rgb(249, 27, 27) ;
+  }
+ 
+  
+

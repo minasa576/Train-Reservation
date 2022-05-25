@@ -1,0 +1,66 @@
+{%load static%}
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/update.css' %}">
+
+    <title>profile</title>
+</head>
+
+<body>
+   
+    <nav>
+        <ul>
+            <li id="title"><a href="default.asp"></a>Railways<img id="logo" src="{% static 'images/train (2).png'%}"></li>
+            <li><a href="http://127.0.0.1:8000">Log Out</a></li>
+            
+            
+          </ul>
+        </nav>
+    <nav id="bottom">
+        <ul>
+            <li style="margin-left:9% ;"><a href="http://127.0.0.1:8000">Home</a></li>
+            <li><a href="http://127.0.0.1:8000//classes">Trains</a></li>
+            <li><a href="http://127.0.0.1:8000//Trips">Trips</a></li>
+            <li><a href="http://127.0.0.1:8000//stations">Stations</a></li>
+            <li><a href="http://127.0.0.1:8000//booked">Bookings</a></li>
+            <li><a href="http://127.0.0.1:8000//aboutUs">About Us</a></li>
+            <li><a href="http://127.0.0.1:8000//contactUs">Contact Us</a></li>
+            <li><a href="http://127.0.0.1:8000//Profile">Profile</a></li>
+        </ul>
+    </nav>
+
+    <div class="mainDiv">
+        <div class="profile divs">
+            <img src="{% static 'images/ava.png'%}" width="150px" height="150px"
+                style="margin-left:150px; margin-top:15px;border-radius: 50%;">
+        </div>
+
+        <form method="POST">
+            {%csrf_token%}
+            <div class="information">
+                <h4>Full Name</h4>
+                <input value="{{form.username}}" name="updname" type="text"
+                    style="border:none;border-bottom:3px solid black;background-color:rgba(126, 116, 116, 0.0) ;">
+                <h4>E-mail</h4>
+                <input  value="{{form.email}}" name="updmail" type="email"
+                    style="border:none;border-bottom:3px solid black;background-color:rgba(126, 116, 116, 0.0) ;">
+                <h4>Password</h4>
+                <input  value="{{form.password}}" name="updpass" type="password"
+                    style="border:none;border-bottom:3px solid black;background-color:rgba(126, 116, 116, 0.0) ;">
+                <h4>Address</h4>
+                <input  value="{{form.location}}" name="updaddr" type="text" id="last"
+                    style="border:none;border-bottom:3px solid black;background-color:rgba(126, 116, 116, 0.0) ;">
+
+            </div>
+
+            <a href="http://127.0.0.1:8000//Home"><input class="update" type="submit" value="Save" ></a>
+            <a href="http://127.0.0.1:8000//Profile"><input class="update" type="button" value="Back" ></a>
+        </form>
+    </div>
+
+</body>
+
+</html>

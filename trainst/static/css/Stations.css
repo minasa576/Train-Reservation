@@ -1,0 +1,111 @@
+nav
+{
+    margin: 0;
+    padding: 0;
+   background-color:rgb(55,55,55);
+}
+#bottom
+{
+  background-color: rgb(68, 68, 68);
+  padding: 1%;
+}
+nav ul
+ {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+ nav ul li 
+  {
+    display: inline-block;
+    margin-right: 3%;
+    
+  }
+  #bottom ul li 
+  {
+    margin-right: 5%;
+  }
+  nav ul li a 
+  {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+  }
+  #logo
+  {
+      width:30px;
+  }
+  #title
+  {
+      display: inline-block;
+      font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+      font-size: 35px;
+      margin-right: 60%;
+      margin-left: 10%;
+      color: #af1414;
+      text-shadow: 0px 2px 3px #555;
+  }
+.cairo{
+    margin-left: 20px;
+    border: 1px solid black ;
+    height: 180px;
+    box-sizing: border-box;
+    padding-left: 10px;
+    width: 350px;
+
+}
+.alex{
+   
+    border: 1px solid black ;
+    height: 180px;
+    box-sizing: border-box;
+    padding-left: 10px;
+    width: 350px;
+
+ 
+}
+.aswan{
+   
+    border: 1px solid black ;
+    height: 180px;
+    box-sizing: border-box;
+    padding-left: 10px;
+    width: 350px;
+
+
+}
+.assiut{
+ 
+    border: 1px solid black ;
+    height: 180px;
+    box-sizing: border-box;
+    padding-left: 10px;
+    width: 350px;
+
+}
+.fayoum{
+    margin-left: 20px;
+    border: 1px solid black ;
+    height: 180px;
+    box-sizing: border-box;
+    padding-left: 10px;
+    width: 350px;
+
+}
+.sharkia{
+
+    border: 1px solid black ;
+    height: 180px;
+    box-sizing: border-box;
+    padding-left: 10px;
+    width: 350px;
+
+}
+img{
+    width: 15px;
+    height:15px;
+}
+.box{
+    display:inline-block;
+    width: 350px;
+}

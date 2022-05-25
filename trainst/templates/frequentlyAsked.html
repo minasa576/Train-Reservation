@@ -1,0 +1,73 @@
+{%load static%}
+<!DOCTYPE html>
+
+<html>
+
+<head>
+  <title>Frequently asked questions</title>
+  <link rel="stylesheet" href="{%static 'css/FrequentlyAskedQuestions.css'%}">
+  <script src="{%static 'js/FrequentlyAskedQuestions.js'%}"></script>
+</head>
+
+<body onload="setVisibility('QandA', 'hidden');">
+  <nav>
+    <ul>
+        <li id="title"><a href="default.asp"></a>Railways<img id="logo" src="{% static 'images/train (2).png'%}"></li>
+        <li><a href="http://127.0.0.1:8000">Log Out</a></li>
+        
+        
+      </ul>
+    </nav>
+  <nav id="bottom">
+    <ul>
+      <li style="margin-left:9% ;"><a href="http://127.0.0.1:8000//Home">Home</a></li>
+      <li><a href="http://127.0.0.1:8000//classes">Trains</a></li>
+      <li><a href="http://127.0.0.1:8000//Trips">Trips</a></li>
+      <li><a href="http://127.0.0.1:8000//stations">Stations</a></li>
+      <li><a href="http://127.0.0.1:8000//booked">Bookings</a></li>
+      <li><a href="http://127.0.0.1:8000//aboutUs">About Us</a></li>
+      <li><a href="http://127.0.0.1:8000//contactUs">Contact Us</a></li>
+      <li><a href="http://127.0.0.1:8000//Profile">Profile</a></li>
+    </ul>
+  </nav>
+  <h2>Do I need to register to use Railway ?</h2>
+  <p id="answer1" class="QandA">You do not need to register when exploring our trips, directions, prices and the
+    possibility of
+    booking any of
+    the selected trips, but you need to register when you make a reservation on any of the trips.</p>
+  <button onclick="toggleVisibility('answer1'); return false;"> click to see the answer </button>
+
+
+  <h2>I entered the wrong phone number while booking. Can I get a ticket on another number?</h2>
+  <p id="answer2" class="QandA">Once the reservation is made, the mobile and the customer's name is registered with
+    this
+    reservation and cannot be modified, but it is possible to ride on the appointment in name only - and the
+    phone number must be changed in order to be registered correctly with the next reservation.</p>
+  <button onclick="toggleVisibility('answer2'); return false;">click to see the answer </button>
+
+  <h2>What should I do if I lost my ticket?</h2>
+  <p id="answer3" class="QandA">Go to the station, and a receipt is made to the customer after reviewing the info on
+    the site at an amount of 25 pounds for each ticket.</p>
+  <button onclick="toggleVisibility('answer3'); return false;">click to see the answer </button>
+
+  <h2>Is it mandatory to take a hard copy of the ticket?</h2>
+  <p id="answer4" class="QandA">There is no need to get a printed copy of the ticket when paying with a credit card
+    system as the reservation data is recorded so you can be present directly to your. In case of requesting
+    home delivery, our representative will receive the printed tickets and you must keep them and take them on the
+    flight.</p>
+  <button onclick="toggleVisibility('answer4'); return false;">click to see the answer </button>
+
+  <h2>Can I switch to another train?</h2>
+  <p id="answer5" class="QandA">you can't switch to another train once 24 hours have passed since booking time.</p>
+  <button onclick="toggleVisibility('answer5'); return false;">click to see the answer </button>
+
+  <h2>Does the child need a seat?</h2>
+  <p id="answer6" class="QandA">For any child 4 years of age and older, they must purchase a seat ticket.</p>
+  <button onclick="toggleVisibility('answer6'); return false;">click to see the answer </button>
+
+  <a href="http://127.0.0.1:8000//contactUs"><img src="{% static 'images/contactUs.png' %}" style="float: right; height: 55px; width: 55px;"></a>
+
+
+</body>
+
+</html>

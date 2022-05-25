@@ -1,0 +1,61 @@
+{%load static%}
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="{%static 'css/classes.css'%}">
+    <script src="{%static 'js/slideShow.js'%}"></script>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li id="title"><a href="default.asp"></a>Railways<img id="logo" src="{% static 'images/train (2).png'%}"></li>
+            <li><a href="http://127.0.0.1:8000">Log Out</a></li>
+            
+            
+          </ul>
+        </nav>
+<nav id="bottom">
+  <ul>
+      <li style="margin-left:9% ;"><a href="http://127.0.0.1:8000//Home">Home</a></li>
+      <li><a href="http://127.0.0.1:8000//classes">Trains</a></li>
+      <li><a href="http://127.0.0.1:8000//Trips">Trips</a></li>
+      <li><a href="http://127.0.0.1:8000//stations">Stations</a></li>
+      <li><a href="http://127.0.0.1:8000//booked">Bookings</a></li>
+      <li><a href="http://127.0.0.1:8000//aboutUs">About Us</a></li>
+      <li><a href="http://127.0.0.1:8000//contactUs">Contact Us</a></li>
+      <li><a href="http://127.0.0.1:8000//Profile">Profile</a></li>
+      </ul>
+</nav>
+
+{%for x in trains%}
+<div class="trip">
+    <span class="no"> 
+        {% if x.image %} 
+            <img src="{{x.image.url}}" class="level"> 
+        {% endif%}
+       <div class="text">
+        <span class="name">{{x.name}}</span>
+        <div>
+        <ul class="Lspecs">
+            <li class="seat">{{x.status}}</li>
+            <li>{{x.type}}</li>
+            <li>private screens {{x.private_screens}}</li>
+            <li>Free Snack & Drinks {{x.free_snacks }}</li>
+        </ul>
+        <ul class="Rspecs">
+            <li>USB Port {{x.USB_support}}</li>
+            <li>Earphone {{x.Earphone}}</li>
+            <li>WI-Fi {{x.WIFi}}</li>
+            <li>W.C {{x.WC}}</li>
+        </ul>
+        </div>
+    </div>
+    </span> 
+</div>
+{% endfor %}
+
+
+</body>
+</html>

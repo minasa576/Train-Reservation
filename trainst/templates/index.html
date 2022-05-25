@@ -1,0 +1,68 @@
+{%load static%}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="{%static 'css/index.css'%}">
+</head>
+<body>
+    <nav>
+        <ul>
+          <li id="title"><a href="default.asp"></a>Railways<img id="logo" src="{% static 'images/train (2).png'%}"></li>
+        </ul>
+      </nav>
+    <nav id="bottom">
+      <ul>
+          <li style="margin-left:9% ;"><a href="http://127.0.0.1:8000//Home">Home</a></li>
+          <li><a href="http://127.0.0.1:8000//classes">Trains</a></li>
+          <li><a href="http://127.0.0.1:8000//Trips">Trips</a></li>
+          <li><a href="http://127.0.0.1:8000//stations">Stations</a></li>
+          <li><a href="http://127.0.0.1:8000//booked">Bookings</a></li>
+          <li><a href="http://127.0.0.1:8000//aboutUs">About Us</a></li>
+          <li><a href="http://127.0.0.1:8000//contactUs">Contact Us</a></li>
+          <li><a href="http://127.0.0.1:8000//Profile">Profile</a></li>
+        </ul>
+  </nav>
+    <div id="backgroundImage"></div>
+    <div id="cover"></div>
+    <div id="content">
+        <p id="main">Welcome to Railways</p>
+        <p id="sub">We save your time both while purchasing and while travelling</p>
+    </div>
+    <div id="login_form">
+        <p style="margin-left: 5%;font-weight: bold;">Travelling Route</p>
+       
+            <input type="search" class="date" name="From_index" placeholder="from" style=" 
+                    
+            width: 30%;
+            margin-left: 5%;
+            background-image: url('../images/pin.png');
+            background-position: 95%;
+            background-size: 13%;
+            background-repeat: no-repeat;
+            width: 40%;
+            margin-left: 5%;
+            margin-right: 5%;"
+              > 
+            <input type="search" class="date" name="to_index" placeholder="to" style=" 
+            
+            width: 30%;
+            margin-left: 5%;
+            background-image:  url('images/pin.png');
+            background-position: 95%;
+            background-size: 13%;
+            background-repeat: no-repeat;
+          
+            width: 40%;
+            margin-left: 5%;"> 
+     
+        
+        <form method="GET" action="{% url 'Trips' %}">
+            <p  style="margin-left: 5%; font-weight: bold; margin-top: 10%;">Travelling time</p>
+            <input type="time" tupe="search" class="date" style="margin-right: 23%;" name="start_time">
+            <input type="time" type="search" class="date" name="end_time">
+            <button type="submit">Search Tickets</button>
+        </form>
+    </div>
+</body>
+</html>
